@@ -9,6 +9,16 @@ jobs: #le domaos un nombre representativo
     steps: #son la unidad mas pequeña que nos vam a  permitir realizar diferentes acciones
     - name: Hola Mundo
       run: echo "Hola mundo"
+      # vamos a crear otro step
+    - name: touch file
+      run: touch hola.txt
+    
+    - name: Set text
+      run: echo "Hola Mundo" >> hola.txt
+
+    - name: Read file
+      run: cat hola.txt
+    
 
       #vamos a crear otro job
   other:
@@ -18,7 +28,7 @@ jobs: #le domaos un nombre representativo
     - name: LS
       run: ls -al 
       #Lista los archivos en un directorio.-a: Muestra también los archivos ocultos (aquellos cuyo nombre empieza con un punto .)
-      
+
 
 
       
