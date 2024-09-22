@@ -1,6 +1,12 @@
 name: Hola Mundo #definimos el nombre de nuestro workflow
 
-on: [push]
+on: #[push, pull_request] #aqui especificamos el evento push, pull request. Aqui podemos especificar mas cosas
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+    - main
 
 jobs: #le domaos un nombre representativo 
   hola:
@@ -24,7 +30,9 @@ jobs: #le domaos un nombre representativo
   other:
     runs-on: ubuntu-latest 
     needs: hola #tambien puede ser asu [hola] . lo que hace esto es que primero se ejecute el otro job y despues recien este y no paralelamente como hace rato
-    steps: 
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4.1.7        
     - name: LS
       run: ls -al 
       #Lista los archivos en un directorio.-a: Muestra también los archivos ocultos (aquellos cuyo nombre empieza con un punto .)
