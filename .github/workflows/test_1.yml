@@ -1,0 +1,12 @@
+name: Hola Mundo #definimos el nombre de nuestro workflow
+
+on: [push]
+
+jobs: #le domaos un nombre representativo 
+  hola:
+    runs-on: ubuntu-latest 
+
+    steps: #son la unidad mas pequeña que nos vam a  permitir realizar diferentes acciones
+    - name: Hola Mundo
+      run: Hola mundo
+      
