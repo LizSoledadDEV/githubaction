@@ -3,10 +3,11 @@ name: Hola Mundo #definimos el nombre de nuestro workflow
 on: #[push, pull_request] #aqui especificamos el evento push, pull request. Aqui podemos especificar mas cosas
   push:
     branches:
-    - master
+    - main
   pull_request:
     branches:
-    - master
+    - main
+
 
 jobs: #le domaos un nombre representativo 
   hola:
