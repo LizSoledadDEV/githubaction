@@ -1,6 +1,6 @@
 name: Hola Mundo #definimos el nombre de nuestro workflow
 
-on: [push] #aqui especificamos el evento push
+on: [push, pull_request] #aqui especificamos el evento push
 
 jobs: #le domaos un nombre representativo 
   hola:
