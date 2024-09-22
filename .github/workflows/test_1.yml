@@ -8,5 +8,5 @@ jobs: #le domaos un nombre representativo
 
     steps: #son la unidad mas pequeña que nos vam a  permitir realizar diferentes acciones
     - name: Hola Mundo
-      run: Hola mundo
+      run: echo "Hola mundo"
       
