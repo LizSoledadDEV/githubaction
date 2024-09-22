@@ -38,6 +38,8 @@ jobs: #le domaos un nombre representativo
       run: ls -al 
       #Lista los archivos en un directorio.-a: Muestra también los archivos ocultos (aquellos cuyo nombre empieza con un punto .)
 
+      ##no se que paso aquiiii
+
 
 
       
