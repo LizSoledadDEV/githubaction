@@ -23,7 +23,7 @@ jobs: #le domaos un nombre representativo
       #vamos a crear otro job
   other:
     runs-on: ubuntu-latest 
-
+    needs: hola #tambien puede ser asu [hola] . lo que hace esto es que primero se ejecute el otro job y despues recien este y no paralelamente como hace rato
     steps: 
     - name: LS
       run: ls -al 
