@@ -9,4 +9,16 @@ jobs: #le domaos un nombre representativo
     steps: #son la unidad mas pequeña que nos vam a  permitir realizar diferentes acciones
     - name: Hola Mundo
       run: echo "Hola mundo"
+
+      #vamos a crear otro job
+  other:
+    runs-on: ubuntu-latest 
+
+    steps: 
+    - name: LS
+      run: ls -al 
+      #Lista los archivos en un directorio.-a: Muestra también los archivos ocultos (aquellos cuyo nombre empieza con un punto .)
+      
+
+
       
